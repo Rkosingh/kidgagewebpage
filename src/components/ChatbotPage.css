@@ -1,0 +1,37 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-start; 
+  padding: 20px; 
+}
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.rsc-ts-bubble {
+  background-color: #ff1493; /* Pink background for bot messages */
+  color: #ffffff; /* White text color in bot messages */
+}
+
+.rsc-os-bubble {
+  background-color: #ff1493; /* Light pink background for user messages */
+  color: #000000; /* Black text color in user messages */
+}
+/* App.css */
+.rsc-os-option-element {
+  background-color: #ff1493; /* Pink background for the options */
+  color: #ffffff; /* White text color for better contrast */
+  border: none; /* Remove the default border */
+}
+
+.rsc-os-option-element:hover {
+  background-color: #ff1493; /* A darker pink on hover for a visual effect */
+}
+/* Example CSS to change background color of the header text */
+.rsc-header {
+  background-color: #ff1493 !important; /* Set the background color to pink */
+  color: white; /* Change text color to white for better contrast */
+}

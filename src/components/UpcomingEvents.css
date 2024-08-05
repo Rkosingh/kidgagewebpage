@@ -1,0 +1,219 @@
+.upcoming-events {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.upcoming-events-heading {
+  background-color: #fff;
+  color: #292929;
+  text-align: center;
+  padding: 20px;
+}
+
+.upcoming-events-heading h2 {
+  font-family: 'Neue Machina', sans-serif;
+  font-size: 24px;               
+  color: black;
+}
+
+.select-container {
+  position: relative;
+  display: inline-block;
+}
+
+.select-month {
+  background-color: transparent;    
+  color: #0029be;  /* Change this to your desired blue color */
+  border: none;
+  appearance: none;
+  padding: 2px 30px 2px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.event-drop-down {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #0029be; /* Change this to your desired blue color */
+}
+
+
+.events-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+
+.event-card {
+  position: relative;
+  border-radius: 2%;
+  margin: 20px;
+  width: 210px;
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.308);
+  transition: transform 0.2s;
+  height: 364px; 
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card img {
+  max-height: 230px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.event-card h4 {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 0.7em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.event-card p {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 0.5em;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.event-card button#wishlist {
+  position: absolute;
+  bottom: 95px;
+  left: 86%;
+  font-size: 1.0em;
+  cursor: pointer;
+  border: none;
+  background-color: red;
+  color: white;
+  padding-left: 9px;
+  border-radius: 11%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 39px;
+  width: 26px;
+}
+
+.event-card button#book-now {
+  position: absolute;
+  bottom: 7px;
+  left: 72%;
+  background-color: #313131ea;
+  color: #fff;
+  border: none;
+  border-radius: 20px 20px 20px 20px / 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 64px;
+  height: 20px;
+  font-size: 0.48em;
+  margin-top: 20px;
+}
+
+.event-card button#call {
+  position: absolute;
+  bottom: 24px;
+  left: 35px;
+  width: 0px;
+  height: 0px;
+  padding: 0px 0px;
+  font-size: 1.0em;
+  cursor: pointer;
+  border: none;
+} 
+
+.event-card button#calendar {
+  
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  padding: 0px 0px;
+  font-size: 1.0em;
+  cursor: pointer;
+  border: none;
+} 
+
+.event-card button:hover {
+  background-color: #292929;
+}
+
+.event-view-all {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #007bff;
+  cursor: pointer;
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+  margin: 40px;
+}
+.event-view-all:hover{
+  text-shadow: 0 0 10px #007bff;
+}
+.no-events {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+  height: 415px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .event-card {
+    width: 80%;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  .event-card {
+    width: 35%;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 900px) {
+  .event-card {
+    width: 25%;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .event-card {
+    width: 20%;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .event-card {
+    width: 16%;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .event-card {
+    width: 13%;
+    margin: 10px;
+  }
+}
